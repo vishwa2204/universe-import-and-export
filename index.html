@@ -69,7 +69,7 @@
             </a>
             <div class="nav-menus">
                 <ul class="nav-list mx-auto">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li class="dropdown-service"><a href="#" class="drop-serv">Services</a>
                         <ul class="menu-drop">
@@ -96,7 +96,7 @@
                     <li><a href="#">Products</a></li>
                     <li><a href="#">Gallery</a></li>
                     <li><a href="#">Blogs</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <a href="#" class="nav-login-btn">Enquiry</a>
             </div>
@@ -471,6 +471,113 @@
 
     <!-- Why Choose us Section End -->
 
+    <!-- home form section Start -->
+
+  
+    <!-- Get in touch Start -->
+
+    <section class="home-getInTouch-section">
+        <div class="home-getInTouch-iframe">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31327.286252985028!2d76.92143040921874!3d11.045315753680478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85897648df841%3A0x80b7ba5192d1b3c1!2sKoundampalayam%2C%20Coimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1714725436839!5m2!1sen!2sin"></iframe>
+
+              
+
+            <div class="home-getInTouch-details">
+                <div class="home-details-title">
+                    <h5>Contact Us</h5>
+                    <h2>Let’s work together</h2>
+                </div>
+                <div class="home-getInTouch-content">
+                    <a href="#" class="home-getInTouch-boxs">
+                        <div class="home-getInTouch-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="home-getInTouch-name">
+                            <span>Have Question?</span>
+                            <h3>Free +91 98765 43210 </h3>
+                        </div>
+                    </a>
+                    <a href="#" class="home-getInTouch-boxs">
+                        <div class="home-getInTouch-icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="home-getInTouch-name">
+                            <span>Have Question?</span>
+                            <h3>Free info@importandexport.com</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="home-getInTouch-boxs">
+                        <div class="home-getInTouch-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="home-getInTouch-name">
+                            <span>Have Question?</span>
+                            <h3>26, Jai Nagar, Kavundampalayam, Coimbatore - 641 030 </h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="homeGetInTouch-form">
+            <div class="home-getInTouch-container">
+                <h5>Contact with us</h5>
+                <h2>Feel free to write us</h2>
+                <form action="whatsApp()" method="POST">
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <input type="number" id="number" placeholder="Your mobile number" required>
+                    <textarea name="" id="message" placeholder="Write your message" cols="30" rows="5"></textarea>
+                    <button type="submit" onclick="whatsApp()">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Home Form 
+
+        function whatsApp() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var number = document.getElementById("number").value;
+            var message = document.getElementById("message").value;
+
+
+            if (name == "" || email == "" || number == "" || message == "") {
+                alert("Enter All Fields");
+
+            } else {
+
+
+                // Format the message content
+                var formattedMessage = encodeURIComponent(
+
+                    " *Name* : " + name + "\n" +
+                    " *Email* : " + email + "\n" +
+                    " *Mobile Number* : " + number + "\n" +
+                    " *Message* : " + message);
+
+                // Encode the message for the URL
+                //   var encodedMessage = encodeURIComponent(formattedMessage);
+
+                // Construct the WhatsApp URL
+                var url = "https://wa.me/+919342229700?text=" + formattedMessage;
+
+                // Open the WhatsApp URL in a new tab/window
+                window.open(url, '_black');
+
+
+            }
+        }
+
+    </script>
+    <!-- Get in touch End -->
+
+    <!-- home form section End -->
+
     <!-- testimonial section Start -->
 
     <section class="testimonial-section">
@@ -661,6 +768,7 @@
     <!-- footer section Start -->
 
     <footer>
+
         <div class="footer-container container">
             <div class="footer-boxs">
                 <img src="assets/images/logo/logo-light.png" class="footer-logo" alt="footer-logo">
@@ -734,6 +842,10 @@
                     </a>
                 </div>
             </div>
+        </div>
+        <hr style="background: var(--white);">
+        <div class="after-footer">
+            <p>Copyright © 2024 <a href="https://honeyiconics.in/"> Honey Iconics </a> All Rights Reserved</p>
         </div>
     </footer>
 
