@@ -1,0 +1,337 @@
+:root {
+    --color: #a32424;
+    --color2: #efeae8;
+    --black: #16171a;
+    --white: #fff;
+    --light-gray: #f3f3f3;
+    --gray: rgb(108, 108, 108);
+
+}
+
+.gallery {
+    text-align: center;
+}
+
+.gallery .gallery-content .carousel-title {
+    text-align: justify;
+    height: 30vh;
+    background: linear-gradient(to right, rgba(255, 143, 15, 0.178), rgba(234, 75, 144, 0.316)), url(../Images/Banner/1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    object-fit: cover;
+    clip-path: polygon(0 0,
+            40% 0%,
+            50% 50%,
+            0% 50%,
+            0 50%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: flex-start;
+    padding-left: 1%;
+    padding-top: 2%;
+    margin-bottom: 3%;
+    padding: 2%;
+}
+
+.gallery .gallery-title {
+    margin-bottom: 5%;
+}
+
+.gallery .gallery-title h1 {
+    color: var(--color);
+    font-weight: 700;
+
+}
+
+
+.gallery .gallery-title h1 span {
+    color: var(--black);
+}
+
+.gallery .gallery-content {
+    margin-bottom: 5%;
+}
+
+.gallery .gallery-content .carousel-title h5 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color);
+    -webkit-text-stroke: 0.5px var(--white);
+}
+
+.gallery .gallery-content .carousel-title h5 span {
+    color: var(--white);
+}
+
+.gallery-images .content-area .content .img img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    text-align: center;
+
+}
+
+.gallery-images .content-area .content .img img:hover {
+    border: 2px solid var(--color);
+}
+
+.gallery .gallery-content .carousel-title .line {
+    width: 250px;
+    height: 2px;
+    text-align: center;
+    background-color: var(--white);
+    animation: border 6s ease-in-out infinite;
+}
+
+@keyframes border {
+    0% {
+        transform: translateX(0);
+        width: 0;
+    }
+
+    50% {
+        transform: translateX(00px);
+        width: 250px;
+    }
+
+    100% {
+        transform: translateX(0);
+        width: 0;
+    }
+}
+
+.gallery-content .row .mb-3 {
+    position: relative;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top: 4px solid var(--color);
+    border-bottom: 4px solid var(--color);
+    overflow: hidden;
+}
+
+.gallery-content .row a {
+    background: var(--black);
+}
+
+
+.gallery-content .row .inner-a {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-content .row img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    background-color: var(--black);
+    transition: 0.5s;
+}
+
+.gallery-content .row .inner-a .light-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    overflow: hidden;
+    background-color: var(--color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 90%;
+    transition: 1s;
+}
+
+.gallery-content .row .inner-a:hover .light-overlay {
+    top: 0;
+}
+
+
+.gallery-content .row .inner-a .light-overlay i {
+    margin-bottom: 10%;
+    color: var(--white);
+    opacity: 100%;
+}
+
+.gallery-content .row .inner-a .light-overlay h4 {
+    color: var(--white);
+    font-weight: bolder;
+
+}
+
+
+.gallery-content .row .inner-a:hover .light-overlay {
+    visibility: visible;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:320px) {
+
+    .gallery .gallery-content .carousel-title {
+        text-align: justify;
+        height: 30vh;
+       
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        object-fit: cover;
+        clip-path: polygon(0 0,
+                100% 0%,
+                100% 50%,
+                0% 50%,
+                0 100%);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        justify-content: flex-start;
+        padding-left: 1%;
+        padding-top: 2%;
+        margin-bottom: 3%;
+        padding: 2%;
+    }
+}
+
+@media screen and (min-width:321px) and (max-width:425px) {
+    .gallery .gallery-content .carousel-title {
+        text-align: justify;
+        height: 30vh;
+       
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        object-fit: cover;
+        clip-path: polygon(0 0,
+                100% 0%,
+                100% 50%,
+                0% 50%,
+                0 100%);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        justify-content: flex-start;
+        padding-left: 1%;
+        padding-top: 2%;
+        margin-bottom: 3%;
+        padding: 2%;
+    }
+}
+
+@media screen and (min-width:426px) and (max-width:600px) {
+    .gallery .gallery-content .carousel-title {
+        text-align: justify;
+        height: 30vh;
+      
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        object-fit: cover;
+        clip-path: polygon(0 0,
+                100% 0%,
+                100% 50%,
+                0% 50%,
+                0 100%);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        justify-content: flex-start;
+        padding-left: 1%;
+        padding-top: 2%;
+        margin-bottom: 3%;
+        padding: 2%;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:768px) {
+    .gallery .gallery-content .carousel-title {
+        text-align: justify;
+        height: 30vh;
+      
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        object-fit: cover;
+        clip-path: polygon(0 0,
+                100% 0%,
+                100% 50%,
+                0% 50%,
+                0 100%);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        justify-content: flex-start;
+        padding-left: 1%;
+        padding-top: 2%;
+        margin-bottom: 3%;
+        padding: 2%;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:900px) {}
+
+@media screen and (min-width:901px) and (max-width:992px) {}
+
+@media screen and (min-width:993px) and (max-width:1024px) {}
+
+@media screen and (min-width:1025px) and (max-width:1140px) {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

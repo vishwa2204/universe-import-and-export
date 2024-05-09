@@ -5,9 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Import and Export</title>
+    <meta name="description" content="">
 
+    <link rel="icon" href="assets/images/logo/logo.png">
 
     <!-- css elements  -->
+    <link rel="stylesheet" href="assets/css/blog.css">
+    <link rel="stylesheet" href="assets/css/services.css">
+    <link rel="stylesheet" href="assets/css/about.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- bootstrap elements  -->
@@ -16,14 +21,12 @@
     <!-- font awesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-
-    <link rel="stylesheet" href="assets/css/contact.css">
-
-
+    <!-- Owl carousel  -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 </head>
 
 <body>
-
 
     <!-- navbar Start  -->
 
@@ -72,7 +75,8 @@
                     <li><a href="about.html">About</a></li>
                     <li class="dropdown-service"><a href="#" class="drop-serv">Services</a>
                         <ul class="menu-drop">
-                            <li><a href="freight-services.html"><i class="fa-solid fa-angles-right mx-2"></i> <span>Freight Services
+                            <li><a href="freight-services.html"><i class="fa-solid fa-angles-right mx-2"></i>
+                                    <span>Freight Services
                                         (Ocean/Air/ Road /Rail)</span></a></li>
                             <li><a href="#"><i class="fa-solid fa-angles-right mx-2"></i> <span>Customs
                                         Brokerage</span></a></li>
@@ -109,73 +113,184 @@
 
     <!-- navbar end  -->
 
-
     <!-- banner section start -->
 
     <section class="banner-section">
-
         <img src="assets/images/banner/1.jpg" style="object-fit: cover;" width="100%" alt="banner">
-
     </section>
 
     <!-- banner section End -->
 
 
-    <div class="location container">
-        <div class="location-1">
-            <h4>ADDRESS</h4>
-            <div class="info">
-                <i class="fa-solid fa-location-dot"></i>
-                <a href="">
-                    28, Jai Nagar, Kavundampalayam,<br> Coimbatore -
-                    641030
-                </a>
-            </div>
-            <div class="info">
-                <h4>PHONE</h4>
-                <i class="fa-solid fa-phone-volume"></i>
-                <a href="tel:9080794095">+9994301268</a> <br>
+    <!-- blog section start  -->
 
-            </div>
-
-            <div class="info">
-                <h4>EMAIL</h4>
-                <i class="fa-solid fa-envelope"></i>
-                <a href="mailto:universelogistics">universelogistics@gmail.com</a>
-            </div>
-        </div>
-
-        <div class="location-1">
-            <h4>REACH US</h4>
-            <form action="whatsapp()" method="POST">
-                <div class="split">
-                    <input type="text" id="name" placeholder="User Name">
-                    <input type="text" id="email" placeholder="Email"> <br>
+    <section class="blog-section mt-5">
+        <div class="blog-section-container container">
+            <a href="main-blog-link.html" class="blog-section-boxs">
+                <div class="blog-section-imageContainer">
+                    <img src="assets/images/home-services/3.jpg" alt="Universe-import-and-export">
+                    <div class="blog-update-date">
+                        <div class="blog-date-emptyshape"></div>
+                        <div class="blog-date">
+                            <h5>26 <span>Apr</span></h5>
+                        </div>
+                    </div>
                 </div>
-                <input type="text" class="subject" id="phone" placeholder="Phone"><br>
-                <textarea name="Message" cols="30" rows="5" id="message" placeholder="Your Message Here"></textarea><br>
+                <div class="blog-section-content">
+                    <div class="blog-content-profile">
+                        <i class="fa-solid fa-user"></i>
+                        <div class="blog-admin-title">
+                            <span>By Admin</span>
+                        </div>
+                    </div>
+                    <div class="blog-content-title">
+                        <h5>How to Ensure Direct for The Hassle-Free Visa Process</h5>
+                    </div>
+                    <hr>
+                    <div class="arrow-key">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
 
-                <div class="sumbit-button">
-                    <button type="button" class="submit-button" onclick="whatsapp();">Submit</button>
                 </div>
-            </form>
+            </a>
+            <a href="main-blog-link.html" class="blog-section-boxs">
+                <div class="blog-section-imageContainer">
+                    <img src="assets/images/home-services/6.jpg" alt="Universe-import-and-export">
+                    <div class="blog-update-date">
+                        <div class="blog-date-emptyshape"></div>
+                        <div class="blog-date">
+                            <h5>26 <span>Apr</span></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-section-content">
+                    <div class="blog-content-profile">
+                        <i class="fa-solid fa-user"></i>
+                        <div class="blog-admin-title">
+                            <span>By Admin</span>
+                        </div>
+                    </div>
+                    <div class="blog-content-title">
+                        <h5>How to Ensure Direct for The Hassle-Free Visa Process</h5>
+                    </div>
+                    <hr>
+                    <div class="arrow-key">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </a>
+            <a href="main-blog-link.html" class="blog-section-boxs">
+                <div class="blog-section-imageContainer">
+                    <img src="assets/images/home-services/9.jpg" alt="Universe-import-and-export">
+                    <div class="blog-update-date">
+                        <div class="blog-date-emptyshape"></div>
+                        <div class="blog-date">
+                            <h5>26 <span>Apr</span></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-section-content">
+                    <div class="blog-content-profile">
+                        <i class="fa-solid fa-user"></i>
+                        <div class="blog-admin-title">
+                            <span>By Admin</span>
+                        </div>
+                    </div>
+                    <div class="blog-content-title">
+                        <h5>How to Ensure Direct for The Hassle-Free Visa Process</h5>
+                    </div>
+                    <hr>
+                   <div class="arrow-key">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </a>
+            <a href="main-blog-link.html" class="blog-section-boxs">
+                <div class="blog-section-imageContainer">
+                    <img src="assets/images/home-services/6.jpg" alt="Universe-import-and-export">
+                    <div class="blog-update-date">
+                        <div class="blog-date-emptyshape"></div>
+                        <div class="blog-date">
+                            <h5>26 <span>Apr</span></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-section-content">
+                    <div class="blog-content-profile">
+                        <i class="fa-solid fa-user"></i>
+                        <div class="blog-admin-title">
+                            <span>By Admin</span>
+                        </div>
+                    </div>
+                    <div class="blog-content-title">
+                        <h5>How to Ensure Direct for The Hassle-Free Visa Process</h5>
+                    </div>
+                    <hr>
+                    <div class="arrow-key">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </a>
+            <a href="main-blog-link.html" class="blog-section-boxs">
+                <div class="blog-section-imageContainer">
+                    <img src="assets/images/home-services/9.jpg" alt="Universe-import-and-export">
+                    <div class="blog-update-date">
+                        <div class="blog-date-emptyshape"></div>
+                        <div class="blog-date">
+                            <h5>26 <span>Apr</span></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-section-content">
+                    <div class="blog-content-profile">
+                        <i class="fa-solid fa-user"></i>
+                        <div class="blog-admin-title">
+                            <span>By Admin</span>
+                        </div>
+                    </div>
+                    <div class="blog-content-title">
+                        <h5>How to Ensure Direct for The Hassle-Free Visa Process</h5>
+                    </div>
+                    <hr>
+                   <div class="arrow-key">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </a>
+            <a href="main-blog-link.html" class="blog-section-boxs">
+                <div class="blog-section-imageContainer">
+                    <img src="assets/images/home-services/3.jpg" alt="Universe-import-and-export">
+                    <div class="blog-update-date">
+                        <div class="blog-date-emptyshape"></div>
+                        <div class="blog-date">
+                            <h5>26 <span>Apr</span></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-section-content">
+                    <div class="blog-content-profile">
+                        <i class="fa-solid fa-user"></i>
+                        <div class="blog-admin-title">
+                            <span>By Admin</span>
+                        </div>
+                    </div>
+                    <div class="blog-content-title">
+                        <h5>How to Ensure Direct for The Hassle-Free Visa Process</h5>
+                    </div>
+                    <hr>
+                    <div class="arrow-key">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
 
-
-
-
-
+                </div>
+            </a>
         </div>
-    </div>
+    </section>
 
 
+    <!-- blog section end -->
 
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.2662642347914!2d76.95212427378175!3d11.241812850439775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x49f71894a295ee51%3A0xcb1a9248ee1e1694!2sHoney%20Iconics%20%7C%20Website%20Design%20Company%20in%20Coimbatore%20%7C%20Best%20SEO%20Services%20Company%20in%20Coimbatore!5e0!3m2!1sen!2sin!4v1714472513184!5m2!1sen!2sin"
-        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-
-
+        <!-- footer section Start -->
 
         <footer>
 
@@ -217,7 +332,7 @@
                                 Distribution </a></li>
                         <li><a href="#">Transportation</a></li>
                         <!-- <li><a href="#"><i class="fa-solid fa-angles-right mx-2"></i> <span>Project Handling
-                    (Break Bulk Heavy Lift / OOG)</span></a></li> -->
+                        (Break Bulk Heavy Lift / OOG)</span></a></li> -->
                         <li><a href="#">Value added
                                 Services </a></li>
                         <li><a href="#">Export & Import
@@ -258,6 +373,26 @@
                 <p>Copyright © 2024 <a href="https://honeyiconics.in/"> Honey Iconics </a> All Rights Reserved</p>
             </div>
         </footer>
+    
+        <!-- footer section End -->
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -290,6 +425,11 @@
     <!-- bootstrap elements  -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 
+    <!-- owl carousel  -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+
+    <!-- light box  -->
+    <script src="assets/js/lightbox-plus-jquery.js"></script>
 
     <script>
         let navBtn = document.querySelector('.nav-ham');
@@ -307,31 +447,25 @@
         });
 
     </script>
-   
-   
-   <script>
-    function whatsapp() {
-        var name = document.getElementById("name").value;
-        var email = document.getElementById("email").value;
-        var message = document.getElementById("message").value;
 
-        // Format the message content
-        var formattedMessage = encodeURIComponent(
-            " *Name* : " + name + "\n" +
-            " *Email* : " + email + "\n" +
-            " *Message* : " + message);
+    <script>
 
-        // Encode the message for the URL
-        //   var encodedMessage = encodeURIComponent(formattedMessage);
+        // <!-- FAQ'S  -->
 
-        // Construct the WhatsApp URL
-        var url = "https://wa.me/+918973056764?text=" + formattedMessage;
+        const buttons = document.querySelectorAll("#button");
 
-        // Open the WhatsApp URL in a new tab/window
-        window.open(url, '_self');
-    }
-</script>
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const faq = button.nextElementSibling;
+                const icon = button.children[1];
 
+                faq.classList.toggle('show');
+                icon.classList.toggle('rotate');
+            })
+        })
+
+
+    </script>
 
 
 
