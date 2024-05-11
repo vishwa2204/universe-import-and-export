@@ -15,6 +15,11 @@
     <!-- bootstrap elements  -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
+    <!-- Swiper Elements  -->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
     <!-- font awesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
@@ -73,8 +78,7 @@
                     <li><a href="about.html">About</a></li>
                     <li class="dropdown-service"><a href="#" class="drop-serv">Services</a>
                         <ul class="menu-drop">
-                            <li><a href="freight-services.html"><i class="fa-solid fa-angles-right mx-2"></i> <span>Freight Services
-                                        (Ocean/Air/ Road /Rail)</span></a></li>
+
                             <li><a href="#"><i class="fa-solid fa-angles-right mx-2"></i> <span>Customs
                                         Brokerage</span></a></li>
                             <li><a href="#"><i class="fa-solid fa-angles-right mx-2"></i> <span>Warehouse &
@@ -87,13 +91,33 @@
                                         Services</span> </a></li>
                             <li><a href="#"><i class="fa-solid fa-angles-right mx-2"></i> <span>Export & Import
                                         Documentation</span></a></li>
-                            <li><a href="#"><i class="fa-solid fa-angles-right mx-2"></i> <span>Humanitarian
-                                        Logistics</span></a></li>
+
                             <li><a href="#"><i class="fa-solid fa-angles-right mx-2"></i> <span>Portable
                                         Container Decors</span></a></li>
+
+                            <li><a href="#"><i class="fa-solid fa-angles-right mx-2"></i> <span>Project Cargo</span></a>
+                            </li>
+                            <li><a href="#"><i class="fa-solid fa-angles-right mx-2"></i> <span> Courier
+                                        Services</span></a></li>
+
+
+
+
                         </ul>
                     </li>
-                    <li><a href="#">Products</a></li>
+                    <li class="dropdown-service"><a href="#" class="drop-serv">Freight Services</a>
+                        <ul class="menu-drop">
+                            <li><a href="#"><i class="fa-solid fa-angles-right mx-2"></i> <span>Sea Freight
+                                Services</span></a></li>
+                            <li><a href="#"><i class="fa-solid fa-angles-right mx-2"></i>
+                                    <span>Air Freight Services</span></a></li>
+                            <li><a href="#"><i class="fa-solid fa-angles-right mx-2"></i> <span>Road Freight
+                                        Services</span> </a></li>
+                            <li><a href="#"><i class="fa-solid fa-angles-right mx-2"></i> <span>Rail Freight
+                                        Services</span> </a></li>
+
+                        </ul>
+                    </li>
                     <li><a href="#">Gallery</a></li>
                     <li><a href="blog.html">Blogs</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -114,7 +138,30 @@
 
     <section class="banner-section">
 
-        <img src="assets/images/banner/1.jpg" style="object-fit: cover;" width="100%" alt="banner">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="assets/images/banner/3.jpg" class="" width="100%"
+                        height="100%" alt="Pharma-sources-banner">
+
+                 
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/banner/2.jpg" class="" width="100%"
+                        height="100%" alt="Pharma-sources-banner">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/banner/4.jpg" class="" width="100%"
+                        height="100%" alt="Pharma-sources-banner">
+
+                 
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
 
     </section>
 
@@ -123,10 +170,6 @@
 
     <section class="home-about">
 
-        <img src="assets/images/png/2.png" alt="Universe-Import" class="homeAbout-png">
-        <img src="assets/images/png/2.png" alt="Universe-Import" class="homeAbout-png">
-        <img src="assets/images/png/2.png" alt="Universe-Import" class="homeAbout-png">
-        <img src="assets/images/png/2.png" alt="Universe-Import" class="homeAbout-png">
 
 
         <div class="home-about-container container">
@@ -350,8 +393,7 @@
                     <span class="home-whatWeDo-number"> 8</span>
 
                     <div class="home-whatWeDo-boxContent">
-                        <h5>Humanitarian
-                            Logistics</h5>
+                        <h5>Project Cargo</h5>
 
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
@@ -456,7 +498,7 @@
 
             </div>
             <div class="whyChooseUs-images">
-                <img src="assets/images/home-services/4.jpg" alt="why-choose-us-samundeeswari">
+                <img src="assets/images/banner/6.jpg" alt="why-choose-us-samundeeswari">
                 <div class="whyChooseUs-image-content">
                     <div class="whyChooseUs-image-icon">
                         <i class="fa-solid fa-users-between-lines"></i>
@@ -471,9 +513,53 @@
 
     <!-- Why Choose us Section End -->
 
+    <!-- How We Do Start -->
+
+    
+    <section class="home-whatWeDo mb-3">
+        <div class="home-whatWeDDo-container container">
+            <div class="home-whatWeDo-title">
+                <div class="home-whatWeDo-mainTitle">
+                    <h5>How we do</h5>
+                    <h2>How Supply Chains Are Redefined Throughout Galaxies by Universe Logistics.</h2>
+                </div>
+                <div class="home-whatWeDo-titleContent">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, recusandae quibusdam, vero
+                        laborum reprehenderit perspiciatis quidem, deleniti quisquam beatae repudiandae quas corporis
+                        accusantium. Laborum, distinctio.</p>
+                </div>
+            </div>
+       
+        </div>
+    </section>
+
+
+    <section class="howWeDo-section">
+        <div class="howWeDo-container container">
+            <div class="howWeDo-boxs">
+                <i class="fa-solid fa-pen-ruler"></i>
+                <h5>We Know your Requirements</h5>
+                <p>Understand your requirements by keeping certain factors in mind such as precision, speed, and flexibility.</p>
+            </div>
+            <div class="howWeDo-boxs">
+                <i class="fa-solid fa-business-time"></i>
+                <h5>24 x 7 Support & Services</h5>
+                <p>24x7 triway support & Services providing best quality services at anytime, with customer satisfaction Levels..</p>
+            </div>
+            <div class="howWeDo-boxs">
+                <i class="fa-solid fa-book-open-reader"></i>
+                <h5>Customs Broking</h5>
+                <p>We can get our services are fully customized together from customer’s needs and requirements. We can compromise on the quality of our logistics services.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- How We Do End -->
+
     <!-- home form section Start -->
 
-  
+
     <!-- Get in touch Start -->
 
     <section class="home-getInTouch-section">
@@ -481,7 +567,7 @@
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31327.286252985028!2d76.92143040921874!3d11.045315753680478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85897648df841%3A0x80b7ba5192d1b3c1!2sKoundampalayam%2C%20Coimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1714725436839!5m2!1sen!2sin"></iframe>
 
-              
+
 
             <div class="home-getInTouch-details">
                 <div class="home-details-title">
@@ -583,8 +669,8 @@
     <section class="testimonial-section">
         <img src="assets/images/png/2.png" alt="Universe-Import" class="homeAbout-png">
         <img src="assets/images/png/2.png" alt="Universe-Import" class="homeAbout-png">
-        <img src="assets/images/png/2.png" alt="Universe-Import" class="homeAbout-png">
-        <img src="assets/images/png/2.png" alt="Universe-Import" class="homeAbout-png">
+        <!-- <img src="assets/images/png/2.png" alt="Universe-Import" class="homeAbout-png">
+        <img src="assets/images/png/2.png" alt="Universe-Import" class="homeAbout-png"> -->
 
         <div class="testimonial-container container">
             <div class="testimonial-title">
@@ -732,6 +818,7 @@
                                         </div>
 
                                     </div>
+
                                     <img class="google" src="assets/images/png/48.png" alt="Google">
 
 
@@ -967,6 +1054,33 @@
             // Parameters has to be in square bracket '[]'
             owl.trigger('prev.owl.carousel', [300]);
         })
+    </script>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            effect: "fade",
+            autoplay: {
+                delay: 6000, // Time interval in milliseconds (3 seconds in this example)
+                disableOnInteraction: false, // Continue autoplay even when user interacts with the slider
+            },
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
     </script>
 
 
