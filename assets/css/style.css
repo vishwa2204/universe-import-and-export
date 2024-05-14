@@ -423,7 +423,7 @@ a {
 
 .banner-section {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     margin-bottom: 5%;
     overflow: hidden;
 }
@@ -436,12 +436,25 @@ a {
 .swiper-slide {
     background-position: center;
     background-size: cover;
+    position: relative;
+}
+
+.swiper-slide::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--black);
+    opacity: 0.8;
 }
 
 .swiper-slide img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: contrast(1.1);
 }
 
 .swiper-slide .banner-img {
@@ -477,14 +490,49 @@ a {
     width: 60%;
     height: auto;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 5%;
     transform: translate(0, -50%);
 }
 
+
+
 .swiper-slide .banner-content h1 {
-    color: rgb(0, 21, 112);
-    font-size: 70px !important;
+    color: var(--white);
+    font-size: 45px !important;
+    font-weight: 900;
+    filter: drop-shadow(0 0 10px var(--color));
+}
+
+.swiper-slide .banner-content h2 {
+    color: var(--white);
+    font-size: 45px !important;
+    filter: drop-shadow(0 0 10px var(--color));
+    font-weight: 900;
+}
+@media screen and (max-width:500px) {
+    .banner-content {
+        width: 90%;
+        height: auto;
+        position: absolute;
+        top: 60%;
+        left: 5%;
+        transform: translate(0, -50%);
+    }
+
+    .swiper-slide .banner-content h1 {
+        color: var(--white);
+        font-size: 35px !important;
+        font-weight: 900;
+        filter: drop-shadow(0 0 10px var(--color));
+    }
+    
+    .swiper-slide .banner-content h2 {
+        color: var(--white);
+        font-size: 35px !important;
+        filter: drop-shadow(0 0 10px var(--color));
+        font-weight: 900;
+    }
 }
 
 .swiper-slide .banner-content h6 {
@@ -497,8 +545,9 @@ a {
 }
 
 .swiper-slide .banner-content p {
-    color: gray;
+    color: var(--white);
 }
+
 
 
 .banner-bg {
@@ -2221,4 +2270,27 @@ footer .after-footer p a:hover {
     .howWeDo-container .howWeDo-boxs:nth-child(3){
         width: 100%;
     }
+}
+
+.logistic-container{
+    width: 100%;
+    position: relative;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0 0 10px var(--color));
+}
+
+.logistic-container img{
+    width: 70% !important;
+    border-radius: 30px;
+}
+
+@media screen and (max-width:500px) {
+    .logistic-container img{
+        width: 100% !important;
+        border-radius: 0px;
+    }
+    
 }
